@@ -1,0 +1,17 @@
+{
+  "name": "tattoo-website",
+  "version": "1.0.0",
+  "description": "This repository contains the code for a tattoo artist's portfolio website. It showcases the artist's work, provides information about the shop, and offers a contact form for bookings and inquiries.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^5.0.0",
+    "webpack": "^5.97.1",
+    "webpack-cli": "^5.1.4"
+  }
+}
