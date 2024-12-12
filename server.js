@@ -2,9 +2,13 @@ const express = require("express");
 const mongoose = require("mongoose");
 const session = require("express-session");
 const sessionConfig = require("./config/session"); // From config/session.js
-require("dotenv"); // Loads environment variables
+require("dotenv").config(); // Loads environment variables
 
 const app = express();
+
+// Access MongoDB URI and other variables
+const mongoURI = process.env.MONGO_URI;
+const port = process.env.PORT || 3000;
 
 // Database connection (MongoDB in this example)
 const db = require("./config/db"); // From config/db.js
