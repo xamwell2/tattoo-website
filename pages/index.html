@@ -25,7 +25,7 @@
           <div class="dropdown">
             <button class="dropbtn">Online Consultation</button>
             <div class="dropdown-content">
-              <a href="#book-appointment">Book Appointment</a>
+              <a href="#booking-form">Book Appointment</a>
               <a href="#confirmation">Confirmation</a>
               <a href="#privacy-policy">Privacy Policy</a>
               <a href="#terms-of-use">Terms of Use</a>
@@ -59,13 +59,116 @@
       <div class="content">
         <h1>EXPRESS <span class="highlight">YOURSELF</span></h1>
         <p>UNLEASH A <span class="highlight">NEW DIMENSION </span>OF ART</p>
-        <button class="book-appointment" id="bk-app">Book Appointment</button>
+        <a href="#booking-form-container" class="book-appointment" id="bk-app"
+          >Book Appointment</a
+        >
       </div>
+
       <div class="design-elements">
         <div class="circle left"></div>
         <div class="circle right"></div>
       </div>
     </main>
+
+    <h1 class="booking-h1">Book an Appointment</h1>
+    <div class="container" id="booking-form-container">
+      <h2>Fill out the form below to schedule your appointment</h2>
+      <form id="booking-form">
+        <div class="form-group">
+          <label for="fullname"
+            >Full name <span class="required">*</span></label
+          >
+          <input
+            type="text"
+            id="fullname"
+            name="fullname"
+            placeholder="Enter your full name"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="email"
+            >Email address <span class="required">*</span></label
+          >
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email address"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="phone"
+            >Phone number <span class="required">*</span></label
+          >
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="Enter your phone number"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="procedure"
+            >Select procedure <span class="required">*</span></label
+          >
+          <select id="procedure" name="procedure" required>
+            <option value="">Select procedure</option>
+            <option value="tattoo">Tattoo</option>
+            <option value="piercing">Piercing</option>
+            <option value="consultation">Consultation</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="artist"
+            >Select artist <span class="required">*</span></label
+          >
+          <select id="artist" name="artist" required>
+            <option value="">Select artist</option>
+            <option value="artist1">Artist 1</option>
+            <option value="artist2">Artist 2</option>
+            <option value="artist3">Artist 3</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="datetime"
+            >Select date &amp; time <span class="required">*</span></label
+          >
+          <input type="datetime-local" id="datetime" name="datetime" required />
+        </div>
+
+        <div class="form-group">
+          <label for="comments">Comments</label>
+          <textarea
+            id="comments"
+            name="comments"
+            rows="4"
+            placeholder="Any additional comments or requests"
+          ></textarea>
+        </div>
+
+        <div class="btn-container">
+          <div class="checkbox-container">
+            <input type="checkbox" id="agree" name="agree" required />
+            <label for="agree"
+              >I agree to the processing of personal data
+              <span class="required">*</span></label
+            >
+          </div>
+          <button type="submit" class="btn">Book Now</button>
+        </div>
+      </form>
+      <div id="success-message" style="display: none; color: green">
+        Your appointment has been successfully booked!
+      </div>
+    </div>
 
     <script type="module" src="../js/script.js"></script>
   </body>

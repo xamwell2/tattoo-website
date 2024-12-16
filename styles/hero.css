@@ -5,7 +5,7 @@ body {
 
 main {
   text-align: center;
-  background: url("background.jpg") no-repeat center center/cover;
+  background: url("") no-repeat center center/cover;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -36,6 +36,7 @@ main {
   border-radius: 0.5em;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  text-decoration: none;
 }
 #bk-app:hover {
   background-color: var(--light-Bronze2);
