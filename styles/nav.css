@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+  font-family: "Poppins", cursive;
+}
+
+header {
+  background-color: var(--darker);
+}
+
+.logo {
+  margin: 1.25em 0;
+}
+
+.handwriting {
+  font-family: "Pacifico", cursive;
+  font-size: 2.5em;
+  letter-spacing: 0.0625em;
+  line-height: 1.2;
+  transition: all 0.3s ease;
+  color: var(--light-Bronze1);
+  text-shadow: 0.0625em 0.0625em 0.125em rgba(0, 0, 0, 0.3);
+  will-change: opacity, transform;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20%) rotate(0deg);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) rotate(360deg);
+  }
+}
+
+.handwriting.animate {
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+.handwriting:hover {
+  transform: rotate(-1deg) scale(1.05);
+  text-shadow: 0.125em 0.125em 0.25em rgba(255, 255, 255, 0.5);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+  border-radius: 0.3125em;
+}
+
+.right-menu {
+  display: flex;
+  align-items: center;
+  gap: 1.5em;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropbtn {
+  background-color: var(--darker-ash);
+  color: var(--light-Bronze1);
+  padding: 0.625em 1.25em;
+  border: 0.125em solid var(--light-Bronze2);
+  border-radius: 0.3125em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dropbtn:hover {
+  background-color: var(--light-Bronze2);
+  color: var(--darker-ash);
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.hamburger .line {
+  width: 2.5em;
+  height: 0.3125em;
+  background-color: var(--light-Bronze1);
+  margin: 0.25em 0;
+  transition: transform 0.3s ease;
+}
+
+.hamburger:hover .line {
+  transform: scaleX(1.1);
+}
+
+#menu-text {
+  color: var(--light-Bronze1);
+  font-size: 1.5em;
+}
+
+.menu-label {
+  font-weight: bold;
+}
+
+.dropdown-content,
+.hamburger-dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: var(--darker-ash);
+  border: 0.125em solid var(--light-Bronze2);
+  border-radius: 0.3125em;
+  z-index: 1000;
+}
+
+.dropdown-content a,
+.hamburger-dropdown a {
+  color: var(--light-Bronze1);
+  text-decoration: none;
+  display: block;
+  padding: 0.5em 0.75em;
+  border-radius: 0.3125em;
+  transition: all 0.3s ease;
+}
+
+.dropdown-content a:hover,
+.hamburger-dropdown a:hover {
+  background-color: var(--light-Bronze2);
+  color: var(--darker-ash);
+  transform: scale(1.05);
+}
+
+.dropdown:hover .dropdown-content,
+.hamburger.active .hamburger-dropdown {
+  display: block;
+}
