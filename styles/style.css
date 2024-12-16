@@ -1,0 +1,35 @@
+@import url("../styles/nav.css");
+@import url("../styles/logo.scss");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+/* variable declaration */
+
+:root {
+  --primary: #364d4b, #2c3d42;
+  --light-Bronze1: #caac7f;
+  --light-Bronze2: #b67a4b;
+  --light: #fafcfc;
+  --dark: #323333;
+  --ash: #cacbcc;
+  --dark-ash: #979999;
+  --darker-ash: #656666;
+  --margin: 0;
+  --padding: 0;
+  --box-sizing: border-box;
+  --font-family: "Poppins", cursive;
+}
+
+/* General styles  */
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--dark);
+  color: var(--light);
+  font-size: var(--2em);
+}

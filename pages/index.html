@@ -3,7 +3,58 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Ink_On_Park</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <nav>
+        <!-- Logo -->
+        <div class="logo">
+          <a href=""></a><span class="handwriting">Ink_On_Park</span>
+          <!-- Wrap logo text in a span -->
+        </div>
+
+        <!-- Right Menu: Dropdown and Hamburger -->
+        <div class="right-menu">
+          <!-- Dropdown Menu -->
+          <div class="dropdown">
+            <button class="dropbtn">Online Consultation</button>
+            <div class="dropdown-content">
+              <a href="#book-appointment">Book Appointment</a>
+              <a href="#confirmation">Confirmation</a>
+              <a href="#privacy-policy">Privacy Policy</a>
+              <a href="#terms-of-use">Terms of Use</a>
+              <a href="#faq">FAQ</a>
+              <a href="#contact">Contact Us</a>
+            </div>
+          </div>
+
+          <!-- Hamburger Menu -->
+          <div class="hamburger" id="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="hamburger-dropdown" id="hamburger-dropdown">
+              <div class="hamburger-content">
+                <a href="#about">About Us</a>
+                <a href="#services">Services &amp; Pricing</a>
+                <a href="#artists">Artists</a>
+                <a href="#contact">Contact</a>
+                <a href="#gallery">Gallery</a>
+              </div>
+            </div>
+          </div>
+
+          <span id="menu-text" class="menu-label">Menu</span>
+        </div>
+      </nav>
+    </header>
+
+    <script type="module" src="../js/script.js"></script>
+  </body>
 </html>
