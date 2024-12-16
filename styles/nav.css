@@ -64,15 +64,15 @@ nav {
   background-color: var(--darker-ash);
   color: var(--light-Bronze1);
   padding: 0.625em 1.25em;
-  border: 0.125em solid var(--light-Bronze2);
-  border-radius: 0.3125em;
+  border: 0.5em solid var(--light-Bronze2);
+  border-radius: 0.5em;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .dropbtn:hover {
   background-color: var(--light-Bronze2);
-  color: var(--darker-ash);
+  color: var(--light);
 }
 
 .hamburger {
@@ -129,7 +129,7 @@ nav {
 .dropdown-content a:hover,
 .hamburger-dropdown a:hover {
   background-color: var(--light-Bronze2);
-  color: var(--darker-ash);
+  color: var(--light);
   transform: scale(1.05);
 }
 
