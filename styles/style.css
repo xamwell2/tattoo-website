@@ -1,4 +1,5 @@
 @import url("../styles/nav.css");
+@import url("../styles/hero.css");
 @import url("../styles/logo.scss");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 /* variable declaration */
@@ -16,6 +17,7 @@
   --padding: 0;
   --box-sizing: border-box;
   --font-family: "Poppins", cursive;
+  --button-bg: #c69b6d;
 }
 
 /* General styles  */
