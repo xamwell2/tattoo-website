@@ -1,0 +1,79 @@
+.container {
+  background-color: var(--dark);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+.booking-h1,
+h2 {
+  text-align: center;
+  color: var(--light);
+  font-family: "Pacifico", cursive;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: var(--light);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="datetime-local"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #28a745;
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.btn {
+  background-color: var(--darker-ash);
+  color: var(--light-Bronze1);
+  padding: 10px 20px;
+  border: 0.5em solid var(--light-Bronze2);
+  border-radius: 0.5em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: var(--light-Bronze2);
+  color: var(--light);
+  border-radius: 0.5em;
+  cursor: pointer;
+}
+
+.required {
+  color: red;
+}
