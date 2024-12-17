@@ -2,11 +2,12 @@
 @import url("../styles/logo.scss");
 @import url("../styles/hero.css");
 @import url("../styles/appointment.css");
+@import url("../styles/footer.css");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 /* variable declaration */
 
 :root {
-  --primary: #364d4b, #2c3d42;
+  --primary: #364d4b;
   --light-Bronze1: #caac7f;
   --light-Bronze2: #b67a4b;
   --light: #fafcfc;
@@ -14,6 +15,7 @@
   --ash: #cacbcc;
   --dark-ash: #979999;
   --darker-ash: #656666;
+  --dark-swamp: #2c3d42;
   --margin: 0;
   --padding: 0;
   --box-sizing: border-box;

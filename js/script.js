@@ -1,8 +1,9 @@
+// Logo
 document.addEventListener("DOMContentLoaded", function () {
   document.querySelector(".handwriting").classList.add("animate");
 });
 
-// const hamburger = document.getElementById("hamburger");
+const hamburger = document.getElementById("hamburger");
 const dropdown = document.getElementById("hamburger-dropdown");
 
 // Toggle dropdown on hamburger click
@@ -33,3 +34,10 @@ hamburger.addEventListener("mouseenter", function () {
     dropdown.style.display = "block"; // Show the dropdown if active
   }
 });
+
+// Footer
+fetch("footer.html")
+  .then((response) => response.text())
+  .then((data) => {
+    document.getElementById("footer-placeholder").innerHTML = data;
+  });
